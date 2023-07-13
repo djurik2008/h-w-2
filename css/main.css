@@ -836,6 +836,13 @@ body {
   line-height: 1.7142857143;
   letter-spacing: 0.42px;
 }
+.checkbox-policy a {
+  color: #2196F3;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+}
 
 .checkbox__icon {
   width: 16px;

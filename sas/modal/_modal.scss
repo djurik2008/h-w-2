@@ -126,6 +126,13 @@
     color: #757575;
     @include font(14px, 24px);
     letter-spacing: 0.42px;
+
+    a {
+        color: #2196F3;
+        @include font(14px, 24px);
+            letter-spacing: 0.42px;
+            text-decoration-line: underline;
+    }
 }
 
 .checkbox__icon {
