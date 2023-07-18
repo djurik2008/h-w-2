@@ -5,6 +5,10 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center
+    }
 }
 .features__descript {
     @include font(14px, 24px);
@@ -12,14 +16,26 @@
     letter-spacing: 0.42px;
 }
 .features__list {
-    display: flex;
-    column-gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        column-gap: 30px;
+    }
+    
 }
 .features__icon__container {
-    padding: 25px 100px;
+    padding: 25px 190px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: #F5F4FA;
+
+    @media screen and (min-width: 768px) {
+        padding: 25px 142px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 25px 100px;
+    }
+
 }
 
 .futures__icon {
