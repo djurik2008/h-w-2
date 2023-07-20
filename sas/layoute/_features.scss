@@ -23,17 +23,22 @@
     
 }
 .features__icon__container {
-    padding: 25px 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: #F5F4FA;
+    
 
     @media screen and (min-width: 768px) {
-        padding: 25px 142px;
+        width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 25px 100px;
+        width: 270px;
     }
 
 }
