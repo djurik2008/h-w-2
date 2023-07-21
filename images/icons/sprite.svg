@@ -158,13 +158,8 @@
 <symbol id="icon-send" viewBox="0 0 32 32">
 <path d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z"></path>
 </symbol>
-<symbol id="icon-menu-1" viewBox="0 0 44 32">
-<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
-<path d="M31 14l6 6 6-6z"></path>
-</symbol>
-<symbol id="icon-menu-2" viewBox="0 0 44 32">
-<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
-<path d="M31 20l6-6 6 6z"></path>
+<symbol id="icon-menu-mobile" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 </defs>
 </svg>

@@ -47,15 +47,14 @@ body {
 }
 
 .container {
-  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -111,12 +110,17 @@ body {
   margin: -1px;
 }
 
+.page-header {
+  border-bottom: 1px #ECECEC;
+}
+
 .page-header__container {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -146,8 +150,6 @@ body {
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    font-family: Raleway;
-    font-weight: 700;
     letter-spacing: 0.78px;
   }
 }
@@ -287,6 +289,7 @@ body {
 .mobile-menu__button {
   width: 40px;
   height: 40px;
+  padding: 0;
   border: none;
   background-color: transparent;
 }
@@ -299,7 +302,10 @@ body {
 .burger__icon {
   width: 40px;
   height: 40px;
-  fill: #686868;
+  fill: #212121;
+}
+.mobile-menu__button:hover .burger__icon, .mobile-menu__button:focus .burger__icon {
+  fill: #2196F3;
 }
 
 .hero__title {
@@ -321,8 +327,8 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-page-images/hero-bg-mobile@1x.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-page-images/hero-bg-mobile@1x.jpg");
@@ -348,6 +354,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-page-images/hero-bg-desktop@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-page-images/hero-bg-desktop@1x.jpg");
   }
@@ -367,7 +375,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features__title {
     text-align: center;
   }
@@ -385,9 +393,22 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -401,20 +422,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
-  height: 120px;
+  padding: 25px 0;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #F5F4FA;
 }
 @media screen and (min-width: 768px) {
   .features__icon__container {
-    width: 354px;
+    padding: 25px 142px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__icon__container {
-    width: 270px;
+    padding: 25px 100px;
   }
 }
 
