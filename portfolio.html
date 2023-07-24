@@ -28,6 +28,11 @@
                     <li class=""><a href="http://" class="link menu__link">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu__button">
+                <svg class="burger__icon">
+                    <use href="./images/icons/sprite.svg#icon-menu-mobile" class="icon-menu-mobile"></use>
+                </svg>
+            </button>
             <ul class="list header-contacts">
                 <li class="contacts__item"><a href="mailto:info@devstudio.com" class="link mail">
                         <svg class="mail__icon">
@@ -44,11 +49,31 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </header>
     <main>
         <section class="section portfolio">
             <h1 class="section__title visually-hidden">портфоліо</h1>
+            <form class="filter__form2">
+                <fieldset class="filter__form">
+                    <label><span><input type="radio" name="filter" class="filter__checkbox" value="Усі" checked>
+                            <h2 class="filter__style">Усі</h2>
+                        </span></label>
+                    <label><span><input type="radio" name="filter" class="filter__checkbox" value="Веб-сайти">
+                            <h2 class="filter__style">Веб-сайти</h2>
+                        </span></label>
+                    <label><span><input type="radio" name="filter" class="filter__checkbox" value="Додатки">
+                            <h2 class="filter__style">Додатки</h2>
+                        </span></label>
+                    <label><span><input type="radio" name="filter" class="filter__checkbox" value="Дизайн">
+                            <h2 class="filter__style">Дизайн</h2>
+                        </span></label>
+                    <label><span><input type="radio" name="filter" class="filter__checkbox" value="Маркетинг">
+                            <h2 class="filter__style">Маркетинг</h2>
+                        </span></label>
+                </fieldset>
+            </form>
             <div class="container">
                 <ul class="portfolio__list list">
                     <li class="portfolio__card">

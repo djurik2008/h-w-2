@@ -1,7 +1,55 @@
-.portfolio__list {
+.filter__form {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    column-gap: 8px;
+    row-gap: 15px;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    border: none;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.filter__style {
+    @include font (16px, 26px);
+    color: #212121;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+
+    border-radius: 4px;
+    background: #F5F4FA;
+    padding: 6px 22px;
+
+    cursor: pointer;
+
+    .filter__checkbox:checked+& {
+        color: #FFFFFF;
+        background-color: #2196F3;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+.filter__checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.portfolio__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+    }
+    
 }
 
 .portfolio__card {
@@ -13,6 +61,10 @@
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 2 * 15px) / 2);
+    }
 }
 .overlay__container {
     position: relative;
