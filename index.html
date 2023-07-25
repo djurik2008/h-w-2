@@ -28,7 +28,8 @@
                     <li class=""><a href="http://" class="link menu__link">Контакти</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mobile-menu__button">
+            <button type="button" class="mobile-menu__button js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
                 <svg class="burger__icon">
                     <use href="./images/icons/sprite.svg#icon-menu-mobile" class="icon-menu-mobile"></use>
                 </svg>
@@ -49,9 +50,9 @@
                     </a>
                 </li>
             </ul>
-            <div class="backdrop-m">
+            <div class="backdrop-m js-menu-container" id="mobile-menu">
                 <div class="mob-menu">
-                    <button type="button" class="button__close"><svg class="close__icon">
+                    <button type="button" class="button__close js-close-menu"><svg class="close__icon">
                             <use href="./images/icons/sprite.svg#icon-close"></use>
                         </svg></button>
                     <ul class="mob-menu__list list">
@@ -429,6 +430,10 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
