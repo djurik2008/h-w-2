@@ -3,11 +3,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: calc(100vw/1.06666666);
     padding: 40px;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
+    // @media screen and (min-width: 1200px) {
+    //     width: 528px;
+    // }
 }
 
 .button__close {
@@ -40,9 +43,12 @@
 .modal__title {
     color: #212121;
     text-align: center;
+    @include font (20px, 30px);
     font-size: 20px;
     font-weight: 700;
+    line-height: 30px;
     letter-spacing: 0.6px;
+
     margin-bottom: 12px;
 }
 
@@ -124,14 +130,23 @@
 
 .checkbox-policy {
     color: #757575;
-    @include font(14px, 24px);
-    letter-spacing: 0.42px;
+    @include font(12px, 21px);
+    letter-spacing: 0.36px;
+
+    @media screen and (min-width: 1200px) {
+        @include font(14px, 24px);
+        letter-spacing: 0.42px;
+    }
 
     a {
         color: #2196F3;
-        @include font(14px, 24px);
-            letter-spacing: 0.42px;
+        @include font(12px, 21px);
+            letter-spacing: 0.36px;
             text-decoration-line: underline;
+            @media screen and (min-width: 1200px) {
+                @include font(14px, 24px);
+                    letter-spacing: 0.42px;
+            }
     }
 }
 
