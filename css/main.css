@@ -994,12 +994,22 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 93.7500005859vw;
+  width: 450px;
   padding: 40px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 93.7500005859vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .button__close {
@@ -1040,9 +1050,7 @@ img {
   text-align: center;
   font-size: 20px;
   line-height: 1.5;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
@@ -1105,7 +1113,7 @@ img {
 
 .input__massage {
   width: 100%;
-  height: 96px;
+  height: 120px;
   resize: none;
   padding: 12px 16px;
   border-radius: 4px;
@@ -1187,8 +1195,8 @@ img {
 }
 
 .checkbox__icon {
-  width: 16px;
-  height: 16px;
+  max-width: 16px;
+  max-height: 16px;
   border: 1px solid #303030;
   border-radius: 2px;
   cursor: pointer;
@@ -1228,6 +1236,7 @@ img {
     height: 100vh;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    pointer-events: none;
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1236,6 +1245,7 @@ img {
   .backdrop-m.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    pointer-events: auto;
   }
 }
 @media screen and (max-width: 767px) {
